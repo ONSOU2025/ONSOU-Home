@@ -22,8 +22,7 @@
                 <div class="hidden md:flex space-x-8 text-gray-700">
                     <a href="#about" class="nav-link hover:text-cyan-600 transition-colors duration-300">About</a>
                     <a href="#play" class="nav-link hover:text-cyan-600 transition-colors duration-300">Play</a>
-                    <a href="#music-station" class="nav-link hover:text-cyan-600 transition-colors duration-300">Music Station</a> <!-- 追加: Music Stationへのリンク -->
-                    <a href="#qa" class="nav-link hover:text-cyan-600 transition-colors duration-300">Q&A</a>
+                    <a href="#music-station" class="nav-link hover:text-cyan-600 transition-colors duration-300">Music Station</a> <a href="#qa" class="nav-link hover:text-cyan-600 transition-colors duration-300">Q&A</a>
                     <a href="#member" class="nav-link hover:text-cyan-600 transition-colors duration-300">Member</a>
                     <a href="#social" class="nav-link hover:text-cyan-600 transition-colors duration-300">Social</a>
                     <a href="#news" class="nav-link hover:text-cyan-600 transition-colors duration-300">News</a>
@@ -39,8 +38,7 @@
             <div id="mobile-menu" class="md:hidden bg-gray-100 text-gray-900 text-center py-4 slide-menu">
                 <a href="#about" class="block py-2 hover:bg-gray-200 transition-colors">About</a>
                 <a href="#play" class="block py-2 hover:bg-gray-200 transition-colors">Play</a>
-                <a href="#music-station" class="block py-2 hover:bg-gray-200 transition-colors">Music Station</a> <!-- 追加: Music Stationへのリンク -->
-                <a href="#qa" class="block py-2 hover:bg-gray-200 transition-colors">Q&A</a>
+                <a href="#music-station" class="block py-2 hover:bg-gray-200 transition-colors">Music Station</a> <a href="#qa" class="block py-2 hover:bg-gray-200 transition-colors">Q&A</a>
                 <a href="#member" class="block py-2 hover:bg-gray-200 transition-colors">Member</a>
                 <a href="#social" class="block py-2 hover:bg-gray-200 transition-colors">Social</a>
                 <a href="#news" class="block py-2 hover:bg-gray-200 transition-colors">News</a>
@@ -49,8 +47,11 @@
         <div class="header-content">
             </div>
         
-        <div class="absolute top-20 md:top-24 left-0 right-0 z-40 px-4">
-            <div class="max-w-4xl mx-auto p-4 md:p-6 rounded-lg shadow-2xl bg-yellow-50 border-l-4 border-yellow-500 text-gray-800 animate-slide-down">
+        <div id="warning-box" class="absolute top-[68px] md:top-[88px] left-0 right-0 z-40 px-4">
+            <div class="max-w-4xl mx-auto p-4 md:p-6 rounded-lg shadow-2xl bg-yellow-50 border-l-4 border-yellow-500 text-gray-800 animate-slide-down relative">
+                <button id="close-warning-btn" class="absolute top-2 right-2 text-xl text-gray-500 hover:text-gray-800 focus:outline-none p-2">
+                    <i class="fas fa-times"></i>
+                </button>
                 <h3 class="text-lg font-bold mb-2 flex items-center text-yellow-700">
                     <i class="fas fa-exclamation-triangle mr-3 text-2xl"></i> 📢 ダウンロード時のご注意
                 </h3>
@@ -233,6 +234,3 @@
 
 </body>
 </html>
-
-
-
