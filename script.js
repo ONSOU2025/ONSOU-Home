@@ -38,6 +38,18 @@ const detailDate = document.getElementById('detail-date');
 const detailCategory = document.getElementById('detail-category');
 const detailContent = document.getElementById('detail-content');
 
+// --- 追加: 注意セクションの要素を取得し、閉じるイベントを設定 ---
+const warningBox = document.getElementById('warning-box');
+const closeWarningBtn = document.getElementById('close-warning-btn');
+
+if (closeWarningBtn && warningBox) {
+    closeWarningBtn.addEventListener('click', () => {
+        // warningBoxを非表示にする
+        warningBox.style.display = 'none';
+    });
+}
+// ------------------------------------------------------------------
+
 // Sort news by date in descending order
 const sortedNewsData = newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
