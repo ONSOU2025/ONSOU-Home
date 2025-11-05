@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音奏 -ONSOU-</title>
+    <link rel="icon" href="音奏ロゴ.webp" type="image/webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="_KMajbnJ4Vms5pa0WgsNROOZJy49E9UuADMhf4TitmY" />
+</head>
+<body class="text-gray-900">
+
+    <header class="header-bg relative" id="home">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-95 transition-all duration-300 shadow-md" id="navbar">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="音奏ロゴ.webp" alt="音奏ロゴ" class="w-10 h-10 rounded-full">
+                    <span class="text-2xl font-bold text-gray-900 tracking-wider hidden md:block">音奏 -ONSOU-</span>
+                </a>
+                <div class="hidden md:flex space-x-8 text-gray-700">
+                    <a href="#about" class="nav-link hover:text-cyan-600 transition-colors duration-300">About</a>
+                    <a href="#play" class="nav-link hover:text-cyan-600 transition-colors duration-300">Play</a>
+                    <a href="#music-station" class="nav-link hover:text-cyan-600 transition-colors duration-300">Music Station</a> <!-- 追加: Music Stationへのリンク -->
+                    <a href="#qa" class="nav-link hover:text-cyan-600 transition-colors duration-300">Q&A</a>
+                    <a href="#member" class="nav-link hover:text-cyan-600 transition-colors duration-300">Member</a>
+                    <a href="#social" class="nav-link hover:text-cyan-600 transition-colors duration-300">Social</a>
+                    <a href="#news" class="nav-link hover:text-cyan-600 transition-colors duration-300">News</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-900 text-2xl">
+                    <div class="hamburger-menu" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden bg-gray-100 text-gray-900 text-center py-4 slide-menu">
+                <a href="#about" class="block py-2 hover:bg-gray-200 transition-colors">About</a>
+                <a href="#play" class="block py-2 hover:bg-gray-200 transition-colors">Play</a>
+                <a href="#music-station" class="block py-2 hover:bg-gray-200 transition-colors">Music Station</a> <!-- 追加: Music Stationへのリンク -->
+                <a href="#qa" class="block py-2 hover:bg-gray-200 transition-colors">Q&A</a>
+                <a href="#member" class="block py-2 hover:bg-gray-200 transition-colors">Member</a>
+                <a href="#social" class="block py-2 hover:bg-gray-200 transition-colors">Social</a>
+                <a href="#news" class="block py-2 hover:bg-gray-200 transition-colors">News</a>
+            </div>
+        </nav>
+        <div class="header-content">
+            </div>
+        
+        <div class="absolute top-20 md:top-24 left-0 right-0 z-40 px-4">
+            <div class="max-w-4xl mx-auto p-4 md:p-6 rounded-lg shadow-2xl bg-yellow-50 border-l-4 border-yellow-500 text-gray-800 animate-slide-down">
+                <h3 class="text-lg font-bold mb-2 flex items-center text-yellow-700">
+                    <i class="fas fa-exclamation-triangle mr-3 text-2xl"></i> 📢 ダウンロード時のご注意
+                </h3>
+                <p class="mb-2 text-sm md:text-base">
+                    ゲームファイルは、公開されて間もないため、ご利用のブラウザやセキュリティソフト（Microsoft Defender SmartScreenなど）によって、「安全ではありません」「危険」といった**警告が表示される**ことがあります。
+                </p>
+                <p class="mb-2 text-sm md:text-base">
+                    これは、ファイルの**ダウンロード履歴がまだ少ない**ことに起因するものであり、ファイル自体に**悪意や問題はございません**。
+                </p>
+                <p class="font-semibold text-sm md:text-base">
+                    警告が表示された場合は、「**詳細情報**」をクリックし、「**ダウンロードを継続**」または「**実行**」を選択してダウンロードを完了させてください。私たちは皆さまに安心してゲームをプレイしていただけるよう、安全管理に努めております。
+                </p>
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <section id="about" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">About</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="img.PNG" alt="ゲーム画面のスクリーンショット" class="rounded-lg shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed">
+                        「音奏 -ONSOU-」は、リズムゲームです。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        直感的な操作でノーツを打ち、コンボを繋げましょう。難易度ごとに変わる譜面は、初心者から上級者まで、誰もが楽しめます。
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-700"> 
+                        <li><i class="fas fa-music text-cyan-500 mr-2"></i> オリジナル楽曲多数収録</li>
+                        <li><i class="fas fa-gamepad text-cyan-500 mr-2"></i> 多彩な難易度設定</li>
+                        <li><i class="fas fa-globe text-cyan-500 mr-2"></i> などなど</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="play" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">Play</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white rounded-lg p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <i class="fas fa-globe text-5xl text-gray-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">On-line</h3>
+                    <p class="text-gray-600 mb-4">ブラウザから直接プレイ</p>
+                    <a href="https://unityroom.com/games/o_n_s_o_u" target="_blank" class="btn btn-primary mb-2">UnityRoomでPlay</a>
+                    <br>
+                    <br>
+                    <a href="https://play.unity.com/en/games/7ac383f8-9749-4f03-97b5-de8958157c4f/onsou" target="_blank" class="btn btn-primary">Unity PlayでPlay</a>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <i class="fab fa-windows text-5xl text-gray-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Windows版 (.exe形式)</h3>
+                    <p class="text-gray-600 mb-4">PCでダウンロードしてプレイ</p>
+                    <a href="https://drive.google.com/drive/folders/1cQY7V8gyUGhKPBtA6MmAJ3q2h_yR5nII?usp=drive_link" target="_blank" class="btn btn-primary">Download</a>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <i class="fab fa-android text-5xl text-gray-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Android版 (.apk形式)</h3>
+                    <p class="text-gray-600 mb-4">モバイルでダウンロードしてプレイ</p>
+                    <a href="https://drive.google.com/drive/folders/1EGbtbsXSJsziFtLqkK9jbiXaM8g3BliL?usp=drive_link" target="_blank" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="music-station" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">Music Station / 楽曲紹介</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg p-10 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 text-center w-full max-w-lg">
+                    <i class="fas fa-compact-disc text-6xl text-cyan-500 mb-4 animate-spin-slow"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">「音奏 -ONSOU-」の全楽曲をチェック！</h3>
+                    <p class="text-gray-600 mb-6">ゲームに収録されているオリジナル楽曲の詳細情報や試聴が可能です。</p>
+                    <a href="https://onsou2025.github.io/Music-Station/" class="btn btn-primary text-lg">
+                        MUSIC STATIONへ移動 →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="qa" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">Q&A / よくある質問</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg p-10 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 text-center w-full max-w-lg">
+                    <i class="fas fa-question-circle text-6xl text-cyan-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">疑問や問題の解決策はこちら</h3>
+                    <p class="text-gray-600 mb-6">ゲームに関する操作方法や既知の不具合など、よくある質問とその回答をご確認いただけます。</p>
+                    <a href="https://onsou2025.github.io/ONSOU-QA/" class="btn btn-primary text-lg">
+                        Q&Aページへ移動 →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="member" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">Member</h2>
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/3 text-center mb-8 md:mb-0 member-card">
+                    <img src="https://placehold.co/300x300/e2e8f0/1a202c?text=Planner" alt="企画者の写真" class="rounded-full w-48 h-48 object-cover mb-4 mx-auto">
+                    <h3 class="text-3xl font-bold text-gray-900">カンキツ霊夢</h3>
+                    <p class="text-cyan-600 mb-2">企画・プログラム・UIデザイン・譜面制作等</p>
+                    <p class="text-gray-600 text-sm">「音奏 -ONSOU-」の生みの親</p>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="member-card text-center flex flex-col items-center">
+                        <img src="img/アイコン.png" alt="プログラマーの写真" class="rounded-full w-24 h-24 object-cover mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">ノァ / Noah</h3>
+                        <p class="text-cyan-600 mb-2">UIデザイン・譜面制作等</p>
+                        <p class="text-gray-600 text-sm">譜面制作とか色々</p>
+                    </div>
+                    <div class="member-card text-center flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/e2e8f0/1a202c?text=Illustrator" alt="イラストレーターの写真" class="rounded-full w-24 h-24 object-cover mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">大福モドキ</h3>
+                        <p class="text-cyan-600 mb-2">譜面制作等</p>
+                        <p class="text-gray-600 text-sm">安心・安定の大福モドキ譜面</p>
+                    </div>
+                    <div class="member-card text-center flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/e2e8f0/1a202c?text=Composer" alt="コンポーザーの写真" class="rounded-full w-24 h-24 object-cover mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">YU-TO</h3>
+                        <p class="text-cyan-600 mb-2">譜面制作等</p>
+                        <p class="text-gray-600 text-sm">数多くのクソ譜面を手掛けているとかいないとか</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">Social</h2>
+            <div class="flex justify-center space-x-8 text-gray-900">
+                <a href="https://www.youtube.com/channel/UCoAnS9vg0TWhv64tVN2DvXw" target="_blank" class="hover:text-red-600 transition-colors duration-300">
+                    <i class="fab fa-youtube text-6xl"></i>
+                </a>
+                <a href="https://x.com/ONSOU_2025" target="_blank" class="hover:text-gray-600 transition-colors duration-300">
+                    <i class="fab fa-x-twitter text-6xl"></i>
+                </a>
+            </div>
+        </section>
+        
+        <section id="news" class="section">
+            <h2 class="text-4xl font-bold text-center mb-12">News</h2>
+            <div id="news-list" class="space-y-6">
+                </div>
+            <div id="view-all-container" class="mt-8 text-center" style="display: none;">
+                <button id="view-all-btn" class="btn btn-secondary text-gray-900 border-gray-900 hover:text-cyan-500 hover:border-cyan-500">すべて見る</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="news-detail-container" class="news-detail-container">
+        <div class="news-detail-content bg-white text-gray-900">
+            <button id="close-detail-btn" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="news-detail-list" class="space-y-6">
+                </div>
+            <h2 id="detail-title" class="text-3xl font-bold mb-2" style="display: none;"></h2>
+            <div id="detail-meta" class="flex items-center space-x-4 text-sm text-gray-500 mb-6" style="display: none;">
+                <span id="detail-date"><i class="far fa-calendar-alt mr-1"></i></span>
+                <span id="detail-category" class="bg-cyan-500 text-white text-xs font-bold px-3 py-1 rounded-full"></span>
+            </div>
+            <p id="detail-content" class="text-lg leading-relaxed text-gray-700" style="display: none;"></p>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 text-gray-600 text-center py-8">
+        <div class="container mx-auto px-4 flex justify-center space-x-6 mb-4">
+            <a href="https://www.youtube.com/channel/UCoAnS9vg0TWhv64tVN2DvXw" target="_blank" class="hover:text-red-600 transition-colors duration-300">
+                <i class="fab fa-youtube text-2xl"></i>
+            </a>
+            <a href="https://x.com/ONSOU_2025" target="_blank" class="hover:text-gray-600 transition-colors duration-300">
+                <i class="fab fa-x-twitter text-2xl"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 音奏 -ONSOU-. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
