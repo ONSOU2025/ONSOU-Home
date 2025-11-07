@@ -12,6 +12,11 @@
 </head>
 <body class="text-gray-900">
 
+    <div id="loading-overlay" class="fixed top-0 left-0 w-full h-full bg-white z-[1000] flex justify-center items-center overflow-hidden">
+        <img id="loading-icon" src="音奏ロゴ.webp" alt="音奏ロゴ" class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-pulse">
+        <div id="overlay-top" class="absolute top-0 left-0 w-full h-1/2 bg-white"></div>
+        <div id="overlay-bottom" class="absolute bottom-0 left-0 w-full h-1/2 bg-white"></div>
+    </div>
     <header class="header-bg relative" id="home">
         <nav class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-95 transition-all duration-300 shadow-md" id="navbar">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
