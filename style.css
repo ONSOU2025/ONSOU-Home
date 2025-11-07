@@ -223,3 +223,54 @@ body {
 .animate-slide-down {
     animation: slideDown 0.5s ease-out forwards;
 }
+
+/* --- ページ遷移アニメーション用のCSS追加 --- */
+
+/* ローディング画面の基本スタイル */
+#loading-overlay {
+    /* Tailwindのz-[1000]を指定 */
+    z-index: 1000; 
+    /* 初期状態は表示 */
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+/* スライドアウトアニメーションのキーフレーム */
+@keyframes slideOutTop {
+    to {
+        transform: translateY(-100%);
+    }
+}
+@keyframes slideOutBottom {
+    to {
+        transform: translateY(100%);
+    }
+}
+
+/* 中央のアイコンをフェードアウトさせるキーフレーム */
+@keyframes fadeOutCenter {
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* アニメーション適用時のクラス */
+.slide-out-center {
+    animation: fadeOutCenter 0.3s ease-in forwards;
+}
+
+.slide-out-top {
+    animation: slideOutTop 0.5s ease-in-out forwards;
+}
+
+.slide-out-bottom {
+    animation: slideOutBottom 0.5s ease-in-out forwards;
+}
+
+/* 分割要素のスタイル */
+#overlay-top, #overlay-bottom {
+    /* Tailwindのz-indexよりも高い値を指定して、アイコンの上に配置 */
+    z-index: 1001; 
+}
