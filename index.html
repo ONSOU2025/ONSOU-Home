@@ -17,7 +17,7 @@
         <div id="overlay-top" class="absolute top-0 left-0 w-full h-1/2 bg-white"></div>
         <div id="overlay-bottom" class="absolute bottom-0 left-0 w-full h-1/2 bg-white"></div>
     </div>
-    <header class="header-bg relative" id="home">
+    <header class="header-video-bg relative flex items-center justify-center h-screen overflow-hidden" id="home">
         <nav class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-95 transition-all duration-300 shadow-md" id="navbar">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <a href="#" class="flex items-center space-x-2">
@@ -49,8 +49,22 @@
                 <a href="#news" class="block py-2 hover:bg-gray-200 transition-colors">News</a>
             </div>
         </nav>
-        <div class="header-content">
-            </div>
+        
+        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-cover">
+            <source src="bg_video.mp4" type="video/mp4">
+            お使いのブラウザは動画タグをサポートしていません。
+        </video>
+
+        <div class="absolute inset-0 bg-black opacity-30 z-20"></div>
+
+        <div class="text-center z-30 relative p-5">
+            <h1 class="text-6xl md:text-8xl font-black text-white drop-shadow-lg animate-slide-down">
+                音奏 -ONSOU-
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-white drop-shadow-md animate-slide-down delay-300">
+                新感覚の本格音ゲー
+            </p>
+        </div>
         
         <div id="warning-box" class="absolute top-[68px] md:top-[88px] left-0 right-0 z-40 px-4">
             <div class="max-w-4xl mx-auto p-4 md:p-6 rounded-lg shadow-2xl bg-yellow-50 border-l-4 border-yellow-500 text-gray-800 animate-slide-down relative">
@@ -73,7 +87,6 @@
         </div>
         
     </header>
-
     <main class="container mx-auto px-4 py-8 md:py-16">
 
         <section id="about" class="section">
