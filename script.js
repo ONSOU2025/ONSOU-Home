@@ -226,3 +226,32 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
+
+
+// --- ページ遷移時のアニメーション処理を追加 ---
+
+window.addEventListener('load', () => {
+    const loadingOverlay = document.getElementById('loading-overlay');
+    const overlayTop = document.getElementById('overlay-top');
+    const overlayBottom = document.getElementById('overlay-bottom');
+    // アイコンのIDを'loading-icon'に変更
+    const centerIcon = document.getElementById('loading-icon'); 
+
+    if (loadingOverlay && overlayTop && overlayBottom && centerIcon) {
+        // 1. 中央のアイコンをフェードアウトさせる
+        centerIcon.classList.add('slide-out-center');
+        
+        // 2. 0.3秒後に上下のオーバーレイをスライドアウトさせる
+        setTimeout(() => {
+            overlayTop.classList.add('slide-out-top');
+            overlayBottom.classList.add('slide-out-bottom');
+
+            // 3. アニメーションが完了した後にオーバーレイ全体を非表示にする
+            // slideOutのアニメーション時間 (0.5s) を考慮して、0.5s後に非表示に
+            setTimeout(() => {
+                loadingOverlay.style.opacity = '0';
+                loadingOverlay.style.visibility = 'hidden';
+            }, 500); 
+        }, 300); // 中央のアイコンフェードアウト後0.3秒
+    }
+});
