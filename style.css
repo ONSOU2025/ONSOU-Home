@@ -18,33 +18,10 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-.header-bg {
-    /* ビューポートの高さを100vhに戻し、画像サイズを400pxに調整しました */
-    background: url('音奏ロゴ.webp') no-repeat center center;
-    background-size: 75vh;
-    height: 75vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.header-bg img {
-    opacity: 0.36;
-}
-.header-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* 背景画像を保つために暗さを抑える */
-    background: rgba(255, 255, 255, 0.2); 
-    z-index: 1;
-}
-.header-content {
-    z-index: 2;
-}
+/* 🔽 以前の .header-bg, .header-bg img, .header-bg::after, .header-content のスタイルを削除 🔽 */
+/* 動画背景のスタイルは、index.html の Tailwind クラス (header-video-bg, h-screen, absolute, z-10など) で処理されます */
+/* 🔼 削除 🔼 */
+
 /* Utility classes defined by @apply (Tailwind is required for this) */
 .btn {
     padding: 0 2rem; /* px-8 */
