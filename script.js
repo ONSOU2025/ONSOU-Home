@@ -1,6 +1,24 @@
 // News data (edit this array to manage news articles)
 const newsData = [
     {
+        title: 'ONSOU Player Crownship 2025の開催決定！',
+        date: '2025.11.15',
+        category: 'お知らせ',
+        content: '「音奏最新バージョンva1.0.0.26」にてONSOU Player Crownship 2025の開催決定！音奏をダウンロードして最強の音奏プレイヤー誕生を見届けよう！（今回の大会はディスコードにて参加できます。）'
+    },
+    {
+        title: '音奏最新バージョンva1.0.0.26公開！',
+        date: '2025.11.15',
+        category: 'お知らせ',
+        content: '「音奏最新バージョンva1.0.0.26」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
+    },
+    {
+        title: '音奏最新バージョンva1.0.0.25公開！',
+        date: '2025.11.09',
+        category: 'お知らせ',
+        content: '「音奏最新バージョンva1.0.0.25」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
+    },
+    {
         title: '音奏オリジナル楽曲ステーション公開！',
         date: '2025.11.03',
         category: 'お知らせ',
@@ -13,7 +31,7 @@ const newsData = [
         content: '音ゲー「音奏 -ONSOU-」のQ&Aを本日公開しました！'
     },
     {
-        title: '音奏Q&A公開！',
+        title: '音奏最新バージョンva1.0.0.24公開！',
         date: '2025.10.29',
         category: 'お知らせ',
         content: '「音奏最新バージョンva1.0.0.24」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
@@ -255,3 +273,4 @@ window.addEventListener('load', () => {
         }, 300); // 中央のアイコンフェードアウト後0.3秒
     }
 });
+
