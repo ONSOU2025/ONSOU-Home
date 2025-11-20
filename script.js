@@ -1,6 +1,12 @@
 // News data (edit this array to manage news articles)
 const newsData = [
     {
+        title: 'ONSOU Player Crownship 2025中間報告！',
+        date: '2025.11.21',
+        category: 'お知らせ',
+        content: '「音奏最新バージョンva1.0.0.26」にて開催中のONSOU Player Crownship 2025中間報告をいたします。一位:はすにねこ  二位:大福モドキ（今回の大会はディスコードにて参加できます。）'
+    },
+    {
         title: 'ONSOU Player Crownship 2025の開催決定！',
         date: '2025.11.15',
         category: 'お知らせ',
@@ -273,4 +279,5 @@ window.addEventListener('load', () => {
         }, 300); // 中央のアイコンフェードアウト後0.3秒
     }
 });
+
 
