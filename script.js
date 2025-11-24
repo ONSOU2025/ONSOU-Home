@@ -1,6 +1,12 @@
 // News data (edit this array to manage news articles)
 const newsData = [
     {
+        title: 'ONSOU MusicStation更新！',
+        date: '2025.11.24',
+        category: 'お知らせ',
+        content: 'ONSOU MusicStationに予選楽曲 ”POLAN様作曲 メ、メ、メリークリスマス” を追加しました。ぜひお聞きください。'
+    },
+    {
         title: 'ONSOU Player Crownship 2025中間報告！',
         date: '2025.11.21',
         category: 'お知らせ',
@@ -279,5 +285,6 @@ window.addEventListener('load', () => {
         }, 300); // 中央のアイコンフェードアウト後0.3秒
     }
 });
+
 
 
