@@ -4,55 +4,55 @@ const newsData = [
         title: 'ONSOU MusicStation更新！',
         date: '2025.11.24',
         category: 'お知らせ',
-        content: '[ONSOU MusicStation](https://onsou2025.github.io/ONSOU-Home/onsou-MS.html)に予選楽曲 ”POLAN様作曲 メ、メ、メリークリスマス” を追加しました。ぜひお聞きください。'
+        content: 'ONSOU MusicStationに予選楽曲 ”POLAN様作曲 メ、メ、メリークリスマス” を追加しました。ぜひお聞きください。'
     },
     {
         title: 'ONSOU Player Crownship 2025中間報告！',
         date: '2025.11.21',
         category: 'お知らせ',
-        content: '「音奏最新バージョンva1.0.0.26」にて開催中のONSOU Player Crownship 2025中間報告をいたします。一位:はすにねこ  二位:大福モドキ（今回の大会はDiscordにて参加できます。）'
+        content: '「音奏最新バージョンva1.0.0.26」にて開催中のONSOU Player Crownship 2025中間報告をいたします。一位:はすにねこ  二位:大福モドキ（今回の大会はディスコードにて参加できます。）'
     },
     {
         title: 'ONSOU Player Crownship 2025の開催決定！',
         date: '2025.11.15',
         category: 'お知らせ',
-        content: '「音奏最新バージョンva1.0.0.26」にてONSOU Player Crownship 2025の開催決定！音奏をダウンロードして最強の音奏プレイヤー誕生を見届けよう！（今回の大会はDiscordにて参加できます。）'
+        content: '「音奏最新バージョンva1.0.0.26」にてONSOU Player Crownship 2025の開催決定！音奏をダウンロードして最強の音奏プレイヤー誕生を見届けよう！（今回の大会はディスコードにて参加できます。）'
     },
     {
         title: '音奏最新バージョンva1.0.0.26公開！',
         date: '2025.11.15',
         category: 'お知らせ',
-        content: '「音奏最新バージョンva1.0.0.26」を本日より配信開始！ダウンロードは[Play](https://onsou2025.github.io/ONSOU-Home/#play)の欄からダウンロードページに移動できます。'
+        content: '「音奏最新バージョンva1.0.0.26」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
     },
     {
         title: '音奏最新バージョンva1.0.0.25公開！',
         date: '2025.11.09',
         category: 'お知らせ',
-        content: '「音奏最新バージョンva1.0.0.25」を本日より配信開始！ダウンロードは[Play](https://onsou2025.github.io/ONSOU-Home/#play)の欄からダウンロードページに移動できます。'
+        content: '「音奏最新バージョンva1.0.0.25」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
     },
     {
         title: '音奏オリジナル楽曲ステーション公開！',
         date: '2025.11.03',
         category: 'お知らせ',
-        content: '[音ゲー「音奏 -ONSOU-」のMusicStation](https://onsou2025.github.io/ONSOU-Home/onsou-MS.html)を本日公開しました！'
+        content: '音ゲー「音奏 -ONSOU-」のMusicStationを本日公開しました！'
     },
     {
         title: '音奏Q&A公開！',
         date: '2025.10.31',
         category: 'お知らせ',
-        content: '[音ゲー「音奏 -ONSOU-」のQ&A](https://onsou2025.github.io/ONSOU-Home/onsou-FQA.html)を本日公開しました！'
+        content: '音ゲー「音奏 -ONSOU-」のQ&Aを本日公開しました！'
     },
     {
         title: '音奏最新バージョンva1.0.0.24公開！',
         date: '2025.10.29',
         category: 'お知らせ',
-        content: '「音奏最新バージョンva1.0.0.24」を本日より配信開始！ダウンロードは[Play](https://onsou2025.github.io/ONSOU-Home/#play)の欄からダウンロードページに移動できます。'
+        content: '「音奏最新バージョンva1.0.0.24」を本日より配信開始！ダウンロードはPlayの欄からダウンロードページに移動できます。'
     },
     {
         title: '公式サイトオープン！',
         date: '2025.9.23',
         category: 'お知らせ',
-        content: '音ゲー「音奏 -ONSOU-」の公式サイトが本日オープンしました。最新情報はこちらでご確認ください。[SNS](https://onsou2025.github.io/ONSOU-Home/#social)でも情報を発信していきますので、ぜひフォローをお願いします！'
+        content: '音ゲー「音奏 -ONSOU-」の公式サイトが本日オープンしました。最新情報はこちらでご確認ください。SNSでも情報を発信していきますので、ぜひフォローをお願いします！'
     },
 ];
 
@@ -285,7 +285,6 @@ window.addEventListener('load', () => {
         }, 300); // 中央のアイコンフェードアウト後0.3秒
     }
 });
-
 
 
 
