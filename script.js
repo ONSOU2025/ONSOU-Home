@@ -298,6 +298,43 @@ window.addEventListener('load', () => {
     }
 });
 
+// 動画カルーセル機能の追加
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('video-slider');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    // スライダーの初期設定とボタンの処理
+    if (slider && prevBtn && nextBtn) {
+        // スクロール幅を計算 (最初のアイテムの幅 + space-x-6 (Tailwindで24px))
+        // w-full sm:w-1/2 lg:w-1/3 の設定により、PCでは3つ分動かす
+        const calculateScrollWidth = () => {
+            const firstItem = slider.querySelector('.flex-shrink-0');
+            if (!firstItem) return 0;
+
+            // 画面幅に応じて、スクロール量を設定
+            // モバイルでは1アイテム分、PCでは3アイテム分スクロールさせるのが一般的ですが、
+            // シンプルに1アイテム分の幅でスクロールさせます
+            const itemWidth = firstItem.offsetWidth;
+            const gap = 24; // space-x-6 = 1.5rem = 24px
+
+            // 1アイテム分 + ギャップをスクロール量とする
+            return itemWidth + gap;
+        };
+
+        // 次へボタンの処理
+        nextBtn.addEventListener('click', () => {
+            const scrollAmount = calculateScrollWidth();
+            slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        // 前へボタンの処理
+        prevBtn.addEventListener('click', () => {
+            const scrollAmount = calculateScrollWidth();
+            slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+    }
+});
 
 
 
