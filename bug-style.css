@@ -1,0 +1,107 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.main-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: #0056b3;
+}
+
+.page-header span {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #0077ff;
+    font-size: 0.9rem;
+}
+
+/* フィルターボタン */
+.filter-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: #0077ff;
+    color: #fff;
+}
+
+/* 不具合カード */
+.bug-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 6px solid #ccc;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.bug-card.status-未解決 { border-left-color: #ff4757; }
+.bug-card.status-修正済 { border-left-color: #2ed573; }
+
+.bug-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #eee;
+    font-weight: bold;
+}
+
+.bug-title {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.bug-desc, .bug-sol {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.bug-sol {
+    background: #f0f9ff;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #0077ff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

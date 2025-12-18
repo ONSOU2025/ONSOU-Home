@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不具合と解決策 | 音奏 -ONSOU-</title>
+    <link rel="stylesheet" href="bug-style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header class="page-header">
+            <a href="https://onsou2025.github.io/ONSOU-Home/" class="back-link">← ホームへ戻る</a>
+            <h1>音奏 -ONSOU- <br><span>不具合の問題と解決策</span></h1>
+        </header>
+
+        <nav class="filter-nav">
+            <button class="filter-btn active" onclick="filterBugs('すべて')">すべて</button>
+            <button class="filter-btn" onclick="filterBugs('未解決')">未解決</button>
+            <button class="filter-btn" onclick="filterBugs('修正済')">修正済</button>
+        </nav>
+
+        <div id="bug-container" class="bug-list">
+            </div>
+    </div>
+
+    <script src="bug-script.js"></script>
+</body>
+</html>
