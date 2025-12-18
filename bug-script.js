@@ -2,15 +2,21 @@
 const bugListData = [
     {
         status: "未解決",
-        title: "ブラウザバックで進行不能になる",
-        description: "プレイ中にブラウザの「戻る」ボタンを押すと、画面が暗転したままになる現象。",
-        solution: "【解決策】ページを再読み込み（F5）してください。現在対策プログラムを作成中です。"
+        title: "予想スコアが不安定",
+        description: "すべてのバージョンで予想スコアがノーツを判定した際に1の位が行き来する。",
+        solution: "現在調査中です。原因判明次第修正いたします。"
     },
     {
         status: "修正済",
-        title: "音量設定が保存されない",
-        description: "一度設定したBGMの音量が、次回起動時にデフォルトに戻ってしまう。",
-        solution: "Ver.1.0.5アップデートで修正しました。現在はブラウザに保存されるようになっています。"
+        title: "譜面のロードが出来ない",
+        description: "va1.0.0.27で特定の条件を満たした場合、難易度 LUNATIC や ULTIMATE などの譜面が、誤って BASIC 譜面としてロードされてしまう。",
+        solution: "va1.0.0.27A1アップデートで修正しました。"
+    },
+    {
+        status: "修正済",
+        title: "オートモードでMISSが判定される",
+        description: "v12.0 & 12.1でオートモード時に、判定がすり抜ける。",
+        solution: "va1.0.0.24アップデートで修正しました。"
     }
 ];
 
@@ -41,4 +47,5 @@ function filterBugs(type) {
 }
 
 // 初期表示
+
 window.onload = () => filterBugs('すべて');
